@@ -1,0 +1,43 @@
+<div class="task-form">
+
+  <h2 class="task-form__header">Add new task</h2>
+
+  <form class="task-form__form" [formGroup]="form">
+
+    <mat-form-field class="task-form__input">
+      <mat-label>Label</mat-label>
+      <input matInput formControlName="label">
+      <mat-error *ngIf="form?.controls.label.hasError('required')">
+        Label is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="task-form__input">
+      <mat-label>Description (optional)</mat-label>
+      <textarea matInput
+                formControlName="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="task-form__input">
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category">
+        <mat-option *ngFor="let category of categories"
+                    [value]="category.value">
+          <mat-icon class="task-form__category-icon">
+            {{ getIcon(category.value) }}
+          </mat-icon>
+          {{category.label}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button type="button"
+            class="task-form__button"
+            mat-raised-button
+            color="primary"
+            [disabled]="form.invalid || (isLoading$ | async)"
+            (click)="addTask()">Add</button>
+
+  </form>
+
+</div>

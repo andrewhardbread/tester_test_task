@@ -1,0 +1,43 @@
+.task-item {
+  border-radius: 12px;
+
+  &_completed {
+    opacity: .7;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  &__label {
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &_completed {
+      text-decoration: line-through;
+    }
+  }
+
+  &__icon {
+    color: #673ab7;
+  }
+
+  &__delete {
+    margin-left: auto;
+    color: #931111;
+  }
+
+  &__body-label {
+    font-weight: 500;
+  }
+
+  &__date {
+    color: #3a3838;
+  }
+}

@@ -1,0 +1,14 @@
+@import "src/main.mixins";
+
+.task-list {
+
+  &__header {
+    @include section-header;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+  }
+}

@@ -1,7 +1,13 @@
-.title-text{
-  font-size: 20px;
-  line-height: 1.5;
-  color: #20364b;
-  font-weight: 600;
-  font-family: 'ProximaNova', sans-serif;
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 50px;
+  padding: 25px 15px;
+
+  &__section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
+

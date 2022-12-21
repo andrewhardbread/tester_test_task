@@ -1,0 +1,17 @@
+@import "src/main.mixins";
+
+.task-form {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__header {
+    @include section-header;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    gap: 20px;
+  }
+}

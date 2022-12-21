@@ -3,16 +3,23 @@
     {
       "id": 1,
       "label": "Kitchen Cleanup",
-      "description":  "Clean my dirty kitchen",
+      "description": "Clean my dirty kitchen",
       "category": "house",
       "done": false
     },
     {
       "id": 2,
       "label": "Taxes",
-      "description":  "Start doing my taxes and contact my accountant jhon for advice",
+      "description": "Start doing my taxes and contact my accountant jhon for advice",
       "category": "bureaucracy",
-      "done": "22-10-2019"
+      "done": "2022-12-21T16:40:08.549Z"
+    },
+    {
+      "id": 1671640124125,
+      "done": "2022-12-21T16:28:48.280Z",
+      "label": "Do test task",
+      "description": "Successfully implement all required functionality",
+      "category": "other"
     }
   ]
 }

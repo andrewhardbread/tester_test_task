@@ -1,0 +1,37 @@
+<mat-accordion class="task-item"
+               [class.task-item_completed]="task.done">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div class="task-item__title">
+          <mat-checkbox class="task-item__checkbox"
+                        color="primary"
+                        [checked]="task.done !== false"
+                        (click)="markTask($event)">
+          </mat-checkbox>
+          <mat-icon class="task-item__icon">
+            {{ icon }}
+          </mat-icon>
+          <span class="task-item__label"
+                [class.task-item__label_completed]="task.done">
+          {{ task.label }}
+        </span>
+          <mat-icon class="task-item__delete"
+                    (click)="deleteTask($event)">
+            delete
+          </mat-icon>
+        </div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p class="task-item__body-label">
+      {{ task.label }}
+    </p>
+    <p class="task-item__description">
+      {{ task.description }}
+    </p>
+    <p *ngIf="completionDate"
+       class="task-item__date">
+      Completion date: {{ completionDate | date }}
+    </p>
+  </mat-expansion-panel>
+</mat-accordion>
