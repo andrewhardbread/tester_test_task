@@ -16,7 +16,8 @@ Clone this project repository to your local machine
 
 #### in other terminal instance — launch frontend
 `npm run start`
-Go to http://localhost:4200/
+
+and then go to http://localhost:4200/
 
 #### Running unit tests
 `npm run test`
