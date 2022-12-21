@@ -1,4 +1,4 @@
-# Angular Technical Test — Tester
+# Angular Technical Test — Tasker
 
 ### Quick start
 #### clone the repo
